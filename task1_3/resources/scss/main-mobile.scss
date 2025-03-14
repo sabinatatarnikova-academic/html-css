@@ -1,0 +1,40 @@
+@media (max-width: 500px) {
+  .main {
+    display: grid;
+    grid-template-areas:
+  'first_name'
+  'last_name'
+  'email'
+  'password'
+  'confirm_password'
+  'gender'
+  'hobbies'
+  'source_income'
+  'income'
+  'picture'
+  'age'
+  'bio'
+  'create';
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    padding-left: 22px;
+    padding-right: 22px;
+
+    &__hobbies {
+      grid-template-areas: 'title title'
+    'area_1 area_2'
+    'area_3 area_4';
+      @for $i from 3 through 4 {
+        .main__hobbies_#{$i} {
+         padding-top: 30px;
+        }
+      }
+    }
+
+    &__create {
+      grid-column: 1;
+    }
+  }
+}

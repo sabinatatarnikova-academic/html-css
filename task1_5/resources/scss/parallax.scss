@@ -1,0 +1,58 @@
+@mixin section ($color){
+  height: 1004px;
+  width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color;
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: 0 -10px 30px rgba(0,0,0,0.3);
+}
+
+.wrapper_outer {
+  height: 1004px;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.parallax__section_winter {
+ @include section(#0057FF);
+}
+
+.parallax__section_spring{
+  @include section(rgba(0, 204, 57, 1));
+}
+
+.parallax__section_summer {
+  @include section(rgba(241, 159, 0, 1));
+}
+
+.parallax__section_autumn{
+  @include section(rgba(214, 66, 0, 1));
+}
+
+.image{
+  transform: translateY(-10%);
+  position: absolute;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: Roboto;
+  font-size: 322px;
+  font-weight: 900;
+  line-height: 585.4px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+  margin: 0;
+  transform: translateY(40%);
+}
+

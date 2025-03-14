@@ -1,0 +1,139 @@
+.main-body .menu {
+  position: fixed;
+  max-width: 264px;
+  height: 100vh;
+  width: 100%;
+  background-color: #D64200;
+  flex-direction: column;
+}
+.main-body .menu img {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 40px;
+}
+.main-body .menu header {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 15px;
+}
+.main-body .menu #navbar {
+  display: flex;
+  flex-direction: column;
+}
+.main-body .menu #navbar a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25.45px;
+  text-align: left;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+.main-body .menu #navbar a:hover {
+  font-weight: 600;
+  background-color: rgba(255, 182, 159, 0.3);
+  cursor: pointer;
+}
+.main-body #main-doc {
+  padding-left: 300px;
+}
+.main-body #main-doc .first_title {
+  margin-top: 0;
+  padding-top: 20px;
+}
+.main-body #main-doc p, .main-body #main-doc ul {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 32.83px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.main-body #main-doc .rectangle {
+  display: flex;
+  max-width: 1160px;
+  width: 100%;
+  height: 69px;
+  background: rgb(200, 196, 197);
+}
+.main-body #main-doc .rectangle p {
+  font-family: Pridi;
+  padding-left: 20px;
+}
+.main-body #main-doc span {
+  font-family: Pridi;
+  background-color: rgb(200, 196, 197);
+}
+
+@media (max-width: 425px) {
+  .main-body {
+    flex-direction: column;
+  }
+  .main-body .menu {
+    max-width: 100vw;
+    position: fixed;
+    max-height: 61px;
+    height: 100%;
+    cursor: pointer;
+  }
+  .main-body .menu header {
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  .main-body .menu header::after {
+    content: url("../images/chevron-down.svg");
+    position: absolute;
+    left: 90%;
+    bottom: 10%;
+  }
+  .main-body .menu img {
+    display: none;
+  }
+  .main-body .menu #navbar {
+    display: none;
+  }
+  .main-body .menu:hover {
+    max-height: 640px;
+    height: 100%;
+  }
+  .main-body .menu:hover #navbar {
+    display: flex;
+  }
+  .main-body .menu:hover #navbar a:last-child {
+    padding-bottom: 100px;
+  }
+  .main-body .menu:hover header::after {
+    content: url("../images/chevron-down.svg");
+    position: absolute;
+    left: 90%;
+    bottom: 93%;
+    transform: rotate(180deg);
+  }
+  .main-body .menu:hover img {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    display: block;
+  }
+  .main-body #main-doc {
+    padding-left: 20px;
+  }
+  .main-body #main-doc .first_title {
+    margin-top: 0;
+    padding-top: 80px;
+  }
+}
+html {
+  max-width: 1600px;
+  font-family: Roboto;
+}
+
+body {
+  margin: 0px;
+}
+
+/*# sourceMappingURL=documentation-main.css.map */

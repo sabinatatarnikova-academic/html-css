@@ -1,0 +1,72 @@
+@media (max-width: 425px) {
+
+  .main-body {
+    flex-direction: column;
+
+    .menu {
+      max-width: 100vw;
+      position: fixed;
+      max-height: 61px;
+      height: 100%;
+      cursor: pointer;
+
+      header {
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 10px;
+      }
+
+      header::after {
+        content: url("../images/chevron-down.svg");
+        position: absolute;
+        left: 90%;
+        bottom: 10%;
+      }
+
+      img {
+        display: none;
+      }
+
+      #navbar {
+        display: none;
+      }
+    }
+
+    .menu:hover {
+      max-height: 640px;
+      height: 100%;
+
+      #navbar {
+        display: flex;
+
+        a:last-child {
+          padding-bottom: 100px;
+        }
+      }
+
+      header::after {
+        content: url("../images/chevron-down.svg");
+        position: absolute;
+        left: 90%;
+        bottom: 93%;
+        transform: rotate(180deg);
+      }
+
+      img {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        display: block;
+      }
+    }
+
+    #main-doc {
+      padding-left: 20px;
+
+      .first_title {
+        margin-top: 0;
+        padding-top: 80px;
+      }
+    }
+  }
+}

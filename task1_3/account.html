@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Task 1_3</title>
+    <link rel="stylesheet" href="resources/scss/accounts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <h1 class="header__text">Create Account</h1>
+    <img src="resources/images/foxminded_logo.png" alt="Foxminded logo" class="header__image">
+</div>
+
+<div class="main">
+    <div class="main__first-name">
+        <p class="main__first-name_title">First name*</p>
+       <div class="main__first-name_block">
+            <input type="text" class="input"  placeholder="Enter your first name">
+        </div>
+    </div>
+
+    <div class="main__last-name">
+        <p class="main__last-name_title">Last name*</p>
+        <div class="main__last-name_block">
+            <input type="text" class="input" placeholder="Enter your last name">
+        </div>
+
+    </div>
+
+    <div class="main__email">
+        <p class="main__email_title">Email*</p>
+        <div class="main__email_block">
+            <input type="email" class="input" placeholder="Enter your email">
+        </div>
+
+    </div>
+
+    <div class="main__password">
+        <p class="main__password_title">Password*</p>
+        <div class="main__password_block">
+            <input type="text" class="input" placeholder="*************">
+        </div>
+
+    </div>
+
+    <div class="main__password-confirm">
+        <p class="main__password-confirm_title">Confirm password*</p>
+        <div class="main__password-confirm_block">
+            <input type="text" class= "input"  placeholder="Enter correct your confirm password">
+        </div>
+
+    </div>
+
+    <div class="main__gender">
+        <p class="main__gender_title">Gender:</p>
+        <label for="male" class="male">
+            <input type="radio" id="male" name="gender" class="real-radio">
+            <span class="custom-radio"></span>
+            Male
+        </label>
+        <label for="female" class="female">
+            <input type="radio" id="female" name="gender" class="real-radio">
+            <span class="custom-radio"></span>
+            Female
+        </label>
+    </div>
+
+    <div class="main__hobbies">
+        <p class="main__hobbies_title">Hobbies</p>
+        <label class="main__hobbies_1">
+            <input type="checkbox" class="real-checkbox">
+            <span class="custom-checkbox"></span>
+            Music
+        </label>
+        <label class="main__hobbies_2">
+            <input type="checkbox" class="real-checkbox">
+            <span class="custom-checkbox"></span>
+            Sports
+        </label>
+        <label class="main__hobbies_3">
+            <input type="checkbox" class="real-checkbox">
+            <span class="custom-checkbox"></span>
+            Travel
+        </label>
+        <label class="main__hobbies_4">
+            <input type="checkbox" class="real-checkbox">
+            <span class="custom-checkbox"></span>
+            Movies
+        </label>
+    </div>
+
+    <div class="main__income">
+        <p class="main__income_title">Source of Income</p>
+        <div class="main__income-wrapper">
+            <select name="source-of-income" class="select">
+                <option value="employed">Employed</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="main__slider">
+        <div class="main__slider-wrapper">
+            <p class="main__slider-wrapper_title">Income</p>
+            <input type="range" id="slider" name="income" min="0" max="50000" value="20000"/>
+        </div>
+        <div class="main__slider_block">20K</div>
+    </div>
+
+    <div class="main__profile">
+        <p class="main__profile_title">Upload Profile Picture</p>
+        <label>
+            <button class="button" type="button">Choose file</button>
+            No file chosen
+        </label>
+    </div>
+
+    <div class="main__age">
+        <p class="main__age_title">Age</p>
+        <div class="main__age_block">
+            <input type="text" class= "input" placeholder="18"></div>
+    </div>
+
+    <div class="main__bio">
+        <p class="main__bio_title">Bio</p>
+        <div class="main__bio_block">
+            <input type="text" class= "input" placeholder="Tell about yourself">
+            <img src="resources/images/dots.svg" alt="dots">
+        </div>
+    </div>
+
+    <div class="main__create">
+        <button class="create_button" type="button">Create</button>
+    </div>
+
+</div>
+
+</body>
+</html>
